@@ -1,0 +1,43 @@
+set autoupdategist
+set noautofocus
+set nocncpcompletion
+set smoothscroll
+set hud
+set noregex
+set noinsertmappings
+set typelinkhints
+set defaultnewtabpage
+let scrollduration = 10
+let searchlimit = 40
+let searchalias g = "google"
+let barposition = "bottom"
+let typelinkhintsdelay = "0"
+let hintcharacters = "fdsawerjkiop"
+
+" Settings
+set autohidecursor " hide the mouse cursor when scrolling
+set typelinkhints " type text in the link to narrow down numeric hints
+let mapleader = ","
+
+" Create a shortcut for search engines. For example, typing ':tabnew g example'
+" would act the same way as ':tabnew google example'
+let searchalias s = "stackoverflow"
+
+let searchlimit = 40 " set the amount of results displayed in the command bar
+
+" Show only these engines in the command bar
+let completionengines = ["duckduckgo", "imdb"]
+
+" Open all of these in a tab with `gnb` or open one of these with <N>goa where <N>
+let qmark a = ["http://www.reddit.com/r/learnjavascript/new", "http://www.reddit.com/r/learnprogramming/new"]
+let qmark b = ["http://www.reddit.com/", "https://github.com/", "https://mail.google.com/mail/u/0/?shva=1#inbox", "https://news.ycombinator.com/"]
+
+" Disable cVim on the sites matching one of the patterns. Pattern prefixed by '@' act as a whitelist.
+let blacklists = ["*://mail.google.com/*"]
+
+
+map <Leader>cc :tabopen http://panel.cloudatcost.com<CR>
+map <Leader>wm :tabopen http://wm.nyco.cc<CR>
+
+let configpath = '/home/nrm/.cvimrc'
+set localconfig
