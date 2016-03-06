@@ -1,0 +1,2 @@
+# cvim
+cvim rc
